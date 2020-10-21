@@ -1,0 +1,675 @@
+done loading dataset
+Initializing spacy nlp |Initializing spacy nlp /
+Initialized spacy nlp
+done training model
+Contains all zero rows
+saved_embeder
+****************************************
+QUERY: hide android keyboard
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: hideKeyboard
+CODE:
+    protected final boolean hideKeyboard() {
+        return SillyAndroid.hideKeyboard(this);
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: getHideKeyboard
+CODE:
+    public MutableLiveData<Boolean> getHideKeyboard() {
+        return hideKeyboard;
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: hideKeyboard
+CODE:
+  @Override public void hideKeyboard() {
+    AppUtils.hideKeyboard(this);
+  }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 4
+----------------------------------------
+DESCRIPTION: hideKeyboard
+CODE:
+    public void hideKeyboard() {
+        ((BaseActivity)getActivity()).hideKeyboard();
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 5
+----------------------------------------
+DESCRIPTION: hideKeyboard
+CODE:
+    public void hideKeyboard() {
+        AppUtils.hideKeyboard(this);
+    }
+
+
+----------------------------------------
+
+
+
+****************************************
+QUERY: train a tensorflow model
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: train
+CODE:
+    public void train(FederatedDataSet trainingData) {
+        model.fit((DataSet) trainingData.getNativeDataSet());
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: initTensorFlowAndLoadModel
+CODE:
+    private void initTensorFlowAndLoadModel() {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    classifier = TensorFlowImageClassifier.create(
+                            getAssets(),
+                            GENDER_MODEL_FILE,
+                            GENDER_LABEL_FILE,
+                            INPUT_SIZE,
+                            IMAGE_MEAN,
+                            IMAGE_STD,
+                            INPUT_NAME,
+                            OUTPUT_NAME);
+                } catch (final Exception e) {
+                    throw new RuntimeException("Error initializing TensorFlow!", e);
+                }
+            }
+        });
+    }   // initTensorFlowAndLoadModel()
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: train
+CODE:
+  @NotNull public final TrainModelRequest train() {
+    return client().trainModel(id());
+  }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 4
+----------------------------------------
+DESCRIPTION: initTensorFlowAndLoadModel
+CODE:
+    private void initTensorFlowAndLoadModel() {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    classifier = TensorFlowImageClassifier.create(
+                            getAssets(),
+                            MODEL_FILE,
+                            LABEL_FILE,
+                            INPUT_SIZE,
+                            IMAGE_MEAN,
+                            IMAGE_STD,
+                            INPUT_NAME,
+                            OUTPUT_NAME);
+                } catch (final Exception e) {
+                    throw new RuntimeException("Error initializing TensorFlow!", e);
+                }
+            }
+        });
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 5
+----------------------------------------
+DESCRIPTION: initTensorFlowAndLoadModel
+CODE:
+    private void initTensorFlowAndLoadModel() {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    classifier = TensorFlowImageClassifier.create(
+                            getAssets(),
+                            MODEL_FILE,
+                            LABEL_FILE,
+                            INPUT_SIZE,
+                            IMAGE_MEAN,
+                            IMAGE_STD,
+                            INPUT_NAME,
+                            OUTPUT_NAME);
+                } catch (final Exception e) {
+                    throw new RuntimeException("Error initializing TensorFlow!", e);
+                }
+            }
+        });
+    }
+
+
+----------------------------------------
+
+
+
+****************************************
+QUERY: plot a bar chart
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: renderBarAxis
+CODE:
+    private void renderBarAxis() {
+        // 标签轴
+        barChart.setCategories(barLabels);
+        // 数据轴
+        barChart.setDataSource(barChartDataset);
+        barChart.getDataAxis().setAxisMax(100);
+        barChart.getDataAxis().setAxisSteps(10);
+
+        // 隐藏柱形图的横坐标
+        barChart.getDataAxis().hide();
+        barChart.getCategoryAxis().hide();
+
+
+        barChart.getBar().setBarTickSpacePercent(1);
+        barChart.getBar().setBarInnerMargin(0);
+
+        barChart.getPlotGrid().hideEvenRowBgColor();
+        barChart.getPlotGrid().hideHorizontalLines();
+        barChart.getPlotGrid().hideOddRowBgColor();
+        barChart.getPlotGrid().hideVerticalLines();
+
+        barChart.getBar().setBarStyle(BarStyle.STROKE);
+        barChart.setApplyBackgroundColor(true);
+        barChart.setBackgroundColor(Color.WHITE);
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: getBarChart
+CODE:
+        BarChart getBarChart() {
+            return barChart;
+        }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: getHorizontalBarChart
+CODE:
+    public HorizontalBarChart getHorizontalBarChart() {
+        return barChart;
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 4
+----------------------------------------
+DESCRIPTION: setupBarDesign
+CODE:
+    private void setupBarDesign() {
+        barChart.setDrawBorders(false);
+        barChart.getXAxis().setDrawAxisLine(false);
+        barChart.getAxisRight().setDrawAxisLine(false);
+        barChart.getAxisLeft().setDrawAxisLine(false);
+        barChart.setDrawGridBackground(false);
+        barChart.getXAxis().setDrawGridLines(false);
+        barChart.getAxisLeft().setDrawGridLines(false);
+        barChart.getAxisRight().setDrawGridLines(false);
+        barChart.getLegend().setEnabled(false);
+        barChart.getXAxis().setDrawLabels(false);
+        barChart.getAxisLeft().setDrawLabels(false);
+        barChart.getAxisRight().setDrawLabels(false);
+        barChart.getDescription().setEnabled(false);
+        barChart.setClickable(false);
+        barChart.setDrawValueAboveBar(false);
+        barChart.getBarData().setDrawValues(false);
+        barChart.setTouchEnabled(false);
+        barChart.getData().setBarWidth(1f);
+
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 5
+----------------------------------------
+DESCRIPTION: getChartId
+CODE:
+    protected int getChartId() {
+        return R.id.horizontal_bar_chart;
+    }
+
+
+----------------------------------------
+
+
+
+****************************************
+QUERY: merge two dataframes
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: ofMerge
+CODE:
+        public static BiConsumer<Joiner, Joiner> ofMerge() {
+            return MERGE;
+        }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: ofMerge
+CODE:
+        public static BiFunction<Joiner, Joiner, Joiner> ofMerge() {
+            return MERGE;
+        }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: main
+CODE:
+	public static void main(String[] args) {
+		MergeList mergeList = new MergeList();
+		ListNode list1 = mergeList.new ListNode(1);
+		list1.next = mergeList.new ListNode(3);
+		ListNode list2 = mergeList.new ListNode(2);
+		list2.next = mergeList.new ListNode(4);
+		ListNode merge = mergeList.Merge2(list1, list2);
+		while (merge != null) {
+			System.out.println(merge.val);
+			merge = merge.next;
+		}
+
+	}
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 4
+----------------------------------------
+DESCRIPTION: getMergeValue
+CODE:
+    public String getMergeValue() {
+        return mergeValue;
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 5
+----------------------------------------
+DESCRIPTION: ofMerge
+CODE:
+        public static BinaryOperator<Joiner> ofMerge() {
+            return MERGE_TO_FIRST;
+        }
+
+
+----------------------------------------
+
+
+
+****************************************
+QUERY: sort a list
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: setSortList
+CODE:
+    public void setSortList(Sort sortList) {
+        this.mSortList = sortList;
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: getSortList
+CODE:
+    public Sort getSortList() {
+        return mSortList;
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: sortList
+CODE:
+    public void sortList(){
+        Collections.sort(mList, new CustomComparator());
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 4
+----------------------------------------
+DESCRIPTION: getSortListData
+CODE:
+	public static ArrayList<AuroraListItem> getSortListData() {
+		return mSortList;
+	}
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 5
+----------------------------------------
+DESCRIPTION: setSortListData
+CODE:
+	public static void setSortListData(ArrayList<AuroraListItem> list) {
+		if (mSortList == null) {
+			mSortList = new ArrayList<AuroraListItem>();
+		}
+		if (list == null) {
+			return;
+		}
+		mSortList.clear();
+	}
+
+
+----------------------------------------
+
+
+
+****************************************
+QUERY: read a pandas dataframe from a file
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: download
+CODE:
+    public InputStream download(String fileName) throws IOException {
+
+        InputStream istreamSaida = RemoteInputStreamClient.wrap(server.getFile(fileName));
+
+        int read;
+        try (FileOutputStream out = new FileOutputStream("e://WS/" + fileName)) {
+            byte[] bytes = new byte[1024];
+            while ((read  = istreamSaida.read(bytes)) != -1) {
+                out.write(bytes, 0, read);
+            }
+            out.close ();
+        } 
+            return new FileInputStream("e://WS/" + fileName);
+        }
+    
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: download
+CODE:
+    public InputStream download(String fileName) throws IOException {
+        InputStream istreamSaida = RemoteInputStreamClient.wrap(server.getFile(fileName));
+        int read;
+        try (FileOutputStream out = new FileOutputStream("" + fileName)) {
+            byte[] bytes = new byte[1024];
+            while ((read  = istreamSaida.read(bytes)) != -1) {
+                out.write(bytes, 0, read);
+            }
+            out.close ();
+        } 
+            return new FileInputStream("" + fileName);
+        
+        }
+        
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: write
+CODE:
+    public void write(ByteArrayOutputStream tagBuffer)
+    {
+        logger.config("Write Frame to Buffer" + getIdentifier());
+        //This is where we will write header, move position to where we can
+        //write body
+        ByteBuffer headerBuffer = ByteBuffer.allocate(getFrameHeaderSize());
+
+        //Write Frame Body Data
+        ByteArrayOutputStream bodyOutputStream = new ByteArrayOutputStream();
+        ((AbstractID3v2FrameBody) frameBody).write(bodyOutputStream);
+
+        //Write Frame Header
+        //Write Frame ID must adjust can only be 3 bytes long
+        headerBuffer.put(Utils.getDefaultBytes(getIdentifier(), "ISO-8859-1"), 0, getFrameIdSize());
+        encodeSize(headerBuffer, frameBody.getSize());
+
+        //Add header to the Byte Array Output Stream
+        try
+        {
+            tagBuffer.write(headerBuffer.array());
+
+            //Add body to the Byte Array Output Stream
+            tagBuffer.write(bodyOutputStream.toByteArray());
+        }
+        catch (IOException ioe)
+        {
+            //This could never happen coz not writing to file, so convert to RuntimeException
+            throw new RuntimeException(ioe);
+        }
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 4
+----------------------------------------
+DESCRIPTION: write
+CODE:
+    public void write(ByteArrayOutputStream tagBuffer)
+    {
+        logger.config("Write Frame to Buffer" + getIdentifier());
+        //This is where we will write header, move position to where we can
+        //write body
+        ByteBuffer headerBuffer = ByteBuffer.allocate(getFrameHeaderSize());
+
+        //Write Frame Body Data
+        ByteArrayOutputStream bodyOutputStream = new ByteArrayOutputStream();
+        ((AbstractID3v2FrameBody) frameBody).write(bodyOutputStream);
+
+        //Write Frame Header
+        //Write Frame ID must adjust can only be 3 bytes long
+        headerBuffer.put(getIdentifier().getBytes(StandardCharsets.ISO_8859_1), 0, getFrameIdSize());
+        encodeSize(headerBuffer, frameBody.getSize());
+
+        //Add header to the Byte Array Output Stream
+        try
+        {
+            tagBuffer.write(headerBuffer.array());
+
+            //Add body to the Byte Array Output Stream
+            tagBuffer.write(bodyOutputStream.toByteArray());
+        }
+        catch (IOException ioe)
+        {
+            //This could never happen coz not writing to file, so convert to RuntimeException
+            throw new RuntimeException(ioe);
+        }
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 5
+----------------------------------------
+DESCRIPTION: downloadImage
+CODE:
+	private Bitmap downloadImage(String urlString) {
+		URL url;
+		try {
+			url = new URL(urlString);
+			HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
+			InputStream is = httpCon.getInputStream();
+			ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+			int nRead, totalBytesRead = 0;
+			byte[] data = new byte[2048];
+			// Read the image bytes in chunks of 2048 bytes
+			while ((nRead = is.read(data, 0, data.length)) != -1) {
+				buffer.write(data, 0, nRead);
+				totalBytesRead += nRead;
+				publishProgress(totalBytesRead);
+			}
+			buffer.flush();
+			byte[] image = buffer.toByteArray();
+			Bitmap bitmap = BitmapFactory.decodeByteArray(image, 0, image.length);
+			return bitmap;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+
+----------------------------------------
+
+
+
+****************************************
+QUERY: plot an image
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: onPostExecute
+CODE:
+        protected void onPostExecute(String plot) {
+            if (plotView != null) {
+                plotView.setText(plot);
+            }
+        }
+    }
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: getPoster
+CODE:
+    public String getPoster() {return poster;}
+    public String getPlot() {return plot;}
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: getPlotTitle
+CODE:
+	public PlotTitle getPlotTitle() {
+		if(null == plotTitle)plotTitle = new PlotTitleRender();
+		return plotTitle;
+	}
+	
+
+----------------------------------------
+
+----------------------------------------
+RANK 4
+----------------------------------------
+DESCRIPTION: setListPlotData
+CODE:
+  public void setListPlotData(ArrayList<PlotData> listPlotData) {
+    this.listPlotData = listPlotData;
+    this.invalidate();
+  }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 5
+----------------------------------------
+DESCRIPTION: setPlot
+CODE:
+    public void setPlot(String plot) {
+
+        mPlotSynopsis.setText(plot);
+
+    }
+
+
+----------------------------------------
+
+
+
