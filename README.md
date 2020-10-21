@@ -1,2 +1,68 @@
 # Neural-Code-Search
 An implementation of the paper  [https://dl.acm.org/doi/abs/10.1145/3211346.3211353]
+
+'''
+Searching over large code corpora can be a powerful productivity tool for both beginner and experienced developers because it helps them quickly find examples of code related to their intent. Code search becomes even more attractive if developers could express their intent in natural language,similar to the interaction that Stack Overflow supports.
+
+'''
+
+[1] The dataset used for this is taken from the github repository : link[https://github.com/facebookresearch/Neural-Code-Search-Evaluation-Dataset]
+
+
+[2] The repository codesearch [https://github.com/nokia/codesearch] by Nokia has been of great help and most of thr code has been taken from there.
+
+The repository contains many clean data sets and pretrained models for the same . But I did not find any code or model for the data that I mentioned above which is given by the original authors of the paper. 
+
+So I decided to download and process the data into a format that can be consumed by the code by the second code. It took a lot of time ,so I have uploaded the processed datasets which can be downloaded in two parts and appended by a simple list append from here [1] [2]
+
+
+I trained the ncs model on the data and the pretrained models are also available for further downstream tasks.
+
+fasttext model[link]
+tfidf model [link]
+
+entire model along with params [link]
+
+
+Next I provided with some outputs corresponding to the test set .
+
+
+
+The entire result can be obtained from here.[link]
+
+
+To setup the model 
+
+1. run setup.py
+
+2. Download the data
+
+3. The model can be trained from ncs/train_ncs_with_custom_data.py
+
+4. Download the test file
+
+5. To get predictions ncs/predict_custom_data.py
+
+I have also provided a script for loading the pretrained model and evaluating which can be found in ncs/load_model_and_predict.py
+
+Some ablation study is therte in experiments in ncs/experiments.ipynb which I have copied from the original repo.
+
+ncs/ncs.ipynb is also taken from original repo but have been used to reflect the results on our data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+To Do
+
+1. re-ranking 
+2. query improvement
+3. automatic evaluation
