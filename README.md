@@ -34,6 +34,7 @@ QUERY: How to hide status bar in Android?
 RANK 1
 ****************************************
 DESCRIPTION: setStatusBarAndroid
+
 CODE:
     public static void setStatusBarAndroid() {
 
@@ -44,6 +45,7 @@ CODE:
 RANK 2
 ****************************************
 DESCRIPTION: hideStatusBar
+
 CODE:
 	public final void hideStatusBar() {
 		StatusBarHelper.hideStatusBar(getWindow());
@@ -53,6 +55,7 @@ CODE:
 RANK 3
 ****************************************
 DESCRIPTION: setHideStatusBar
+
 CODE:
         public GSYSmallVideoHelperBuilder setHideStatusBar(boolean hideStatusBar) {
             this.mHideStatusBar = hideStatusBar;
@@ -68,6 +71,7 @@ QUERY: How to handle back button in activity?
 RANK 1
 ****************************************
 DESCRIPTION: handleBackButton
+
 CODE:
 	protected void handleBackButton() 
 	{
@@ -79,6 +83,7 @@ CODE:
 RANK 2
 ****************************************
 DESCRIPTION: onStartButtonClick
+
 CODE:
     public void onStartButtonClick(View view) {
         handleOnStartButtonClick(view);
