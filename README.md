@@ -6,10 +6,10 @@ Searching over large code corpora can be a powerful productivity tool for both b
 
 '''
 
-[1] The dataset used for this is taken from the github repository : link[https://github.com/facebookresearch/Neural-Code-Search-Evaluation-Dataset]
+[1] The dataset used for this is taken from the github repository : [link](https://github.com/facebookresearch/Neural-Code-Search-Evaluation-Dataset)
 
 
-[2] The repository codesearch [https://github.com/nokia/codesearch] by Nokia has been of great help and most of thr code has been taken from there.
+[2] The repository [codesearch] (https://github.com/nokia/codesearch) by Nokia has been of great help and most of the code has been taken from there.
 
 The repository contains many clean data sets and pretrained models for the same . But I did not find any code or model for the data that I mentioned above which is given by the original authors of the paper. 
 
@@ -24,7 +24,74 @@ tfidf model [link]
 entire model along with params [link]
 
 
-Next I provided with some outputs corresponding to the test set .
+### Next I provided with some outputs corresponding to the test set .
+
+****************************************
+QUERY: How to hide status bar in Android?
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: setStatusBarAndroid
+CODE:
+    public static void setStatusBarAndroid() {
+
+    }
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: hideStatusBar
+CODE:
+	public final void hideStatusBar() {
+		StatusBarHelper.hideStatusBar(getWindow());
+	}
+
+
+----------------------------------------
+
+----------------------------------------
+RANK 3
+----------------------------------------
+DESCRIPTION: setHideStatusBar
+CODE:
+        public GSYSmallVideoHelperBuilder setHideStatusBar(boolean hideStatusBar) {
+            this.mHideStatusBar = hideStatusBar;
+            return this;
+        }
+
+****************************************
+QUERY: How to handle back button in activity?
+****************************************
+
+----------------------------------------
+RANK 1
+----------------------------------------
+DESCRIPTION: handleBackButton
+CODE:
+	protected void handleBackButton() 
+	{
+		this.getActivity().finish();
+	}
+}
+
+----------------------------------------
+
+----------------------------------------
+RANK 2
+----------------------------------------
+DESCRIPTION: onStartButtonClick
+CODE:
+    public void onStartButtonClick(View view) {
+        handleOnStartButtonClick(view);
+    }
+
+
+----------------------------------------
 
 
 
