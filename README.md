@@ -30,7 +30,7 @@ entire model along with params [link]
 QUERY: How to hide status bar in Android?
 ****************************************
 
-----------------------------------------
+
 RANK 1
 ****************************************
 DESCRIPTION: setStatusBarAndroid
@@ -61,7 +61,7 @@ CODE:
 
 ****************************************
 QUERY: How to handle back button in activity?
-----------------------------------------
+****************************************
 
 
 RANK 1
