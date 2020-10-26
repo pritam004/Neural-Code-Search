@@ -14,12 +14,12 @@ Searching over large code corpora can be a powerful productivity tool for both b
 
 The repository contains many clean data sets and pretrained models for the same . But I did not find any code or model for the data that I mentioned above which is given by the original authors of the paper. 
 
-### data
+### Data
 
 So I decided to download and process the data into a format that can be consumed by the code by the second code. It took a lot of time ,so I have uploaded the processed datasets which can be downloaded in two parts and appended by a simple list append from here [1](https://drive.google.com/file/d/1VzyabXE3ecKZ39o2UovdE04BWQdVe0QQ/view?usp=sharing) [2](https://drive.google.com/file/d/1T0Mk9lTg3NOEh7hmZOsBSYyXx5fea1vN/view?usp=sharing)
 
 
-### trained models
+### Trained models
 
 I trained the ncs model on the data and the pretrained models are also available for further downstream tasks.
 
@@ -29,7 +29,8 @@ tfidf model [link]
 entire model along with params [link]
 
 
-### Next I provided with some outputs corresponding to the test set .
+### Examples
+Next I provided with some outputs corresponding to the test set .
 
 ****************************************
 QUERY: How to hide status bar in Android?
@@ -101,6 +102,8 @@ CODE:
 
 The entire result can be obtained from here.[link](https://drive.google.com/file/d/1W8byMeoVoOWumbGCggS_F_GEOzDPzK6v/view?usp=sharing)
 
+
+### Setting up
 
 To setup the model 
 
