@@ -24,9 +24,9 @@ So I decided to download and process the data into a format that can be consumed
 I trained the ncs model on the data and the pretrained models are also available for further downstream tasks.
 
 fasttext model[link](https://drive.google.com/file/d/1zqAK8kYAsONgnbRuzOA9fifGIXcsKBSz/view?usp=sharing)
-tfidf model [link]
+tfidf model [link](https://drive.google.com/file/d/1w1MDSalJ9tot4WBgNQrICpIs-oOmVRI5/view?usp=sharing)
 
-entire model along with params [link]
+entire model along with params [link](https://drive.google.com/drive/folders/1gn2e7ZJfR7-CYXYYzXN-Ky-yVcaCbKjC?usp=sharing)
 
 
 ### Examples
