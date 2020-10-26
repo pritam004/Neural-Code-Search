@@ -5,6 +5,7 @@ An implementation of the paper  [https://dl.acm.org/doi/abs/10.1145/3211346.3211
 Searching over large code corpora can be a powerful productivity tool for both beginner and experienced developers because it helps them quickly find examples of code related to their intent. Code search becomes even more attractive if developers could express their intent in natural language,similar to the interaction that Stack Overflow supports.
 
 '''
+### Acknowledgements
 
 [1] The dataset used for this is taken from the github repository : [link](https://github.com/facebookresearch/Neural-Code-Search-Evaluation-Dataset)
 
@@ -13,8 +14,12 @@ Searching over large code corpora can be a powerful productivity tool for both b
 
 The repository contains many clean data sets and pretrained models for the same . But I did not find any code or model for the data that I mentioned above which is given by the original authors of the paper. 
 
+### data
+
 So I decided to download and process the data into a format that can be consumed by the code by the second code. It took a lot of time ,so I have uploaded the processed datasets which can be downloaded in two parts and appended by a simple list append from here [1](https://drive.google.com/file/d/1VzyabXE3ecKZ39o2UovdE04BWQdVe0QQ/view?usp=sharing) [2](https://drive.google.com/file/d/1T0Mk9lTg3NOEh7hmZOsBSYyXx5fea1vN/view?usp=sharing)
 
+
+### trained models
 
 I trained the ncs model on the data and the pretrained models are also available for further downstream tasks.
 
