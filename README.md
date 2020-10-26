@@ -9,16 +9,16 @@ Searching over large code corpora can be a powerful productivity tool for both b
 [1] The dataset used for this is taken from the github repository : [link](https://github.com/facebookresearch/Neural-Code-Search-Evaluation-Dataset)
 
 
-[2] The repository [codesearch] (https://github.com/nokia/codesearch) by Nokia has been of great help and most of the code has been taken from there.
+[2] The repository [codesearch](https://github.com/nokia/codesearch) by Nokia has been of great help and most of the code has been taken from there.
 
 The repository contains many clean data sets and pretrained models for the same . But I did not find any code or model for the data that I mentioned above which is given by the original authors of the paper. 
 
-So I decided to download and process the data into a format that can be consumed by the code by the second code. It took a lot of time ,so I have uploaded the processed datasets which can be downloaded in two parts and appended by a simple list append from here [1] [2]
+So I decided to download and process the data into a format that can be consumed by the code by the second code. It took a lot of time ,so I have uploaded the processed datasets which can be downloaded in two parts and appended by a simple list append from here [1](https://drive.google.com/file/d/1VzyabXE3ecKZ39o2UovdE04BWQdVe0QQ/view?usp=sharing) [2](https://drive.google.com/file/d/1T0Mk9lTg3NOEh7hmZOsBSYyXx5fea1vN/view?usp=sharing)
 
 
 I trained the ncs model on the data and the pretrained models are also available for further downstream tasks.
 
-fasttext model[link]
+fasttext model[link](https://drive.google.com/file/d/1zqAK8kYAsONgnbRuzOA9fifGIXcsKBSz/view?usp=sharing)
 tfidf model [link]
 
 entire model along with params [link]
@@ -32,7 +32,7 @@ QUERY: How to hide status bar in Android?
 
 ----------------------------------------
 RANK 1
-----------------------------------------
+****************************************
 DESCRIPTION: setStatusBarAndroid
 CODE:
     public static void setStatusBarAndroid() {
@@ -66,11 +66,11 @@ CODE:
 
 ****************************************
 QUERY: How to handle back button in activity?
-****************************************
+----------------------------------------
 
-----------------------------------------
+
 RANK 1
-----------------------------------------
+****************************************
 DESCRIPTION: handleBackButton
 CODE:
 	protected void handleBackButton() 
@@ -83,7 +83,7 @@ CODE:
 
 ----------------------------------------
 RANK 2
-----------------------------------------
+****************************************
 DESCRIPTION: onStartButtonClick
 CODE:
     public void onStartButtonClick(View view) {
@@ -95,7 +95,7 @@ CODE:
 
 
 
-The entire result can be obtained from here.[link]
+The entire result can be obtained from here.[link](https://drive.google.com/file/d/1W8byMeoVoOWumbGCggS_F_GEOzDPzK6v/view?usp=sharing)
 
 
 To setup the model 
